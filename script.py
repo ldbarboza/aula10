@@ -1,43 +1,18 @@
-class pessoa:
-    def __init__(self, nome, idade, endereco):
-        self.nome = nome
-        self.idade = idade
-        self.endereco = endereco
+def soma(a, b):
+print("Somando valores...")
+return a + b
 
-    def dados(self):
-        print("Nome:", self.nome)
-        print("Idade:", self.idade)
-        print("Endereço:", self.endereco)
+def data():
+    return "01/01/2024"
 
-def validar():
-    print("validando...")  # print em produção
-    return True
+a = 10
+b = "20"
+c = a + b
 
-def validar():  # função duplicada
-    print("outra validação")
-    return False
+def resultado(x, y):
+    return x + y
 
-class Servico:
-    def processar(self, dados):
-        resultado = []
-        for item in dados:
-            resultado.append(item.lower().strip())
-        for i in range(len(resultado)):
-            for j in range(i + 1, len(resultado)):
-                if resultado[i] == resultado[j]:
-                    print("Duplicado:", resultado[i])  # print em produção
-        return resultado
+def resultado(x, y):  # função duplicada
+    return x + y
 
-# Uso incorreto: método estático que não é marcado com @staticmethod
-class Calculadora:
-    def somar(a, b):
-        return a + b
-
-    def dividir(self, a, b):
-        return a / b
-
-calc = Calculadora()
-print(calc.somar(10, 20))  # Erro de uso do método
-
-p1 = pessoa("João", 30, "Rua A")
-p1.dados()
+print("Resultado final:", c)
